@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DivineChili.Controller">
+   <bottom>
+      <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+             <Label text="Version - alpha1.0a" textFill="#2200ff">
+                 <font>
+                     <Font name="System Bold Italic" size="13.0" />
+                 </font>
+             </Label>
+
+             <Separator prefWidth="200.0" visible="false" HBox.hgrow="ALWAYS" />
+            <Label text="Created by " textFill="#2200ff">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+             <Label text="Ailred Misao" textFill="#ff0022">
+                 <font>
+                     <Font name="System Bold Italic" size="12.0" />
+                 </font>
+             </Label>
+             <Label text=", also known as " textFill="#2200ff">
+                 <font>
+                     <Font name="System Bold Italic" size="12.0" />
+                 </font>
+             </Label>
+            <Label layoutX="546.0" layoutY="10.0" text="DivineChili">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="#ff9500" offset="0.154797171860805" />
+                        <Stop color="#b3ff00" offset="0.28925228107595674" />
+                        <Stop color="#12ff00" offset="0.41391160090058" />
+                        <Stop color="#00e6ff" offset="0.5348580005529883" />
+                        <Stop color="#0040ff" offset="0.6805308685863249" />
+                        <Stop color="#8600ff" offset="0.835012047240984" />
+                        <Stop color="#ff00f3" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="807.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="225.0" fitWidth="700.0" layoutX="4.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PianoWithLinesOnTangents.png" />
+               </image>
+            </ImageView>
+            <HBox layoutX="7.0" layoutY="307.0" prefHeight="31.0" prefWidth="715.0" spacing="8.0">
+               <children>
+                  <Button fx:id="C1" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="A" />
+                  <Button fx:id="D1" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="S" />
+                  <Button fx:id="E1" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="D" />
+                  <Button fx:id="F1" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="F" />
+                  <Button fx:id="G1" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="G" />
+                  <Button fx:id="A1" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="H" />
+                  <Button fx:id="B1" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="J" />
+                  <Button fx:id="C2" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="Q" />
+                  <Button fx:id="D2" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="W" />
+                  <Button fx:id="E2" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="E" />
+                  <Button fx:id="F2" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="R" />
+                  <Button fx:id="G2" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="T" />
+                  <Button fx:id="A2" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="Y" />
+                  <Button fx:id="B2" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="U" />
+                  <Button fx:id="C3" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="I" />
+                  <Button fx:id="D3" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="1" />
+                  <Button fx:id="E3" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="4" />
+                  <Button fx:id="F3" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="8" />
+                  <Button fx:id="G3" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="9" />
+                  <Button fx:id="A3" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="0" />
+                  <Button fx:id="B3" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="+" />
+                  <Button fx:id="C4" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="O" />
+               </children>
+            </HBox>
+            <Button fx:id="Fs1" layoutX="121.0" layoutY="102.0" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="V" />
+            <Button fx:id="Fs2" layoutX="345.0" layoutY="102.0" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="5" />
+            <Button fx:id="Fs3" layoutX="557.0" layoutY="102.0" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="C" />
+            <Button fx:id="Bb3" layoutX="621.0" layoutY="102.0" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="M" />
+            <Button fx:id="Gs3" layoutX="589.0" layoutY="102.0" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="," />
+            <Button fx:id="Gs1" layoutX="153.0" layoutY="102.0" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="B" />
+            <Button fx:id="Bb1" layoutX="185.0" layoutY="102.0" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="N" />
+            <Button fx:id="Bb2" layoutX="411.0" layoutY="102.0" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="7" />
+            <Button fx:id="Gs2" layoutX="379.0" layoutY="102.0" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="6" />
+            <Button fx:id="Cs3" layoutX="465.0" layoutY="102.0" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="." />
+            <Button fx:id="Eb3" layoutX="496.0" layoutY="102.0" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="-" />
+            <Button fx:id="Eb2" layoutX="281.0" layoutY="102.0" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="3" />
+            <Button fx:id="Cs2" layoutX="249.0" layoutY="102.0" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="2" />
+            <Button fx:id="Eb1" layoutX="59.0" layoutY="102.0" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="X" />
+            <Button fx:id="Cs1" layoutX="27.0" layoutY="102.0" mnemonicParsing="false" style="-fx-background-color: lightgray; -fx-border-style: none;" text="Z" />
+         </children>
+      </AnchorPane>
+   </center>
+   <right>
+      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="In Development!">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="immidiateRelease" alignment="CENTER" mnemonicParsing="false" text="Immidiate Note Release" />
+            <VBox alignment="CENTER" disable="true" prefHeight="227.0" prefWidth="119.0">
+               <children>
+                  <Label text="Available MIDI Devices:" />
+                  <ChoiceBox fx:id="devices" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ChoiceBox>
+                  <Separator orientation="VERTICAL" prefHeight="150.0" visible="false" />
+                  <HBox alignment="CENTER" VBox.vgrow="NEVER">
+                     <children>
+                        <Label text="Idle" />
+                        <Separator visible="false" />
+                        <Button fx:id="startButton" mnemonicParsing="false" text="Start" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>
