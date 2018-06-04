@@ -1,0 +1,22 @@
+plugins {
+    // Apply the java plugin to add support for Java
+    id 'java'
+
+    // Apply the application plugin to add support for building an application
+    id 'application'
+}
+
+// Define the main class for the application
+mainClassName = 'net.divinechili.Main'
+
+dependencies {
+    // Use JUnit test framework
+    testCompile 'junit:junit:4.12'
+}
+
+// Declare where to find the dependencies
+repositories {
+    // Declare Maven/Ivy/file repository here.
+    // We use jcenter
+    jcenter()
+}

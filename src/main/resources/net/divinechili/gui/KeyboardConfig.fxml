@@ -16,7 +16,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DivineChili.Controller">
+<BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.divinechili.Controller">
    <bottom>
       <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -45,7 +45,7 @@
                      <Font name="System Bold Italic" size="12.0" />
                  </font>
              </Label>
-            <Label layoutX="546.0" layoutY="10.0" text="DivineChili">
+            <Label layoutX="546.0" layoutY="10.0" text="main.java.net.divinechili">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font>

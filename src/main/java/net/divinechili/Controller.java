@@ -1,14 +1,10 @@
-package DivineChili;
+package net.divinechili;
 
-import DivineChili.KeyHook.KeyPressUtil;
-import com.sun.org.apache.xpath.internal.SourceTree;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
-import org.jnativehook.GlobalScreen;
-import org.jnativehook.NativeHookException;
 
 import java.awt.*;
 import java.net.URL;

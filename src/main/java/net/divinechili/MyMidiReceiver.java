@@ -1,14 +1,14 @@
-package DivineChili;
+package net.divinechili;
 
 import javax.sound.midi.MidiMessage;
 import javax.sound.midi.Receiver;
 import java.awt.event.KeyEvent;
 
-public class MyMidiReciever implements Receiver {
+public class MyMidiReceiver implements Receiver {
 
-    public String name;
+    private String name;
 
-    public MyMidiReciever(String name) {
+    public MyMidiReceiver(String name) {
         this.name = name;
     }
 

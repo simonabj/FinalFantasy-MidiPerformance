@@ -21,5 +21,7 @@ hs_err_pid*
 
 # Work directories
 out/
+build/
 .idea/
+.gradle/
 *.iml

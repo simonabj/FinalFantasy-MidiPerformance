@@ -1,4 +1,4 @@
-package DivineChili;
+package net.divinechili;
 
 public enum KeyboardNotes {
     C1(48),

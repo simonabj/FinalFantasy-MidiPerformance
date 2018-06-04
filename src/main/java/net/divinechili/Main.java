@@ -1,4 +1,4 @@
-package DivineChili;
+package net.divinechili;
 
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -8,8 +8,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.jnativehook.GlobalScreen;
-import org.jnativehook.NativeHookException;
 
 import javax.sound.midi.MidiDevice;
 import javax.sound.midi.MidiSystem;
@@ -42,30 +40,27 @@ public class Main extends Application {
                     // Create a new receiver
                     transmitters.get(j).setReceiver(
                             // We use our own created Reciever!
-                            new MyMidiReciever(device.getDeviceInfo().toString())
+                            new MyMidiReceiver(device.getDeviceInfo().toString())
                     );
                 }
 
                 Transmitter trans = device.getTransmitter();
-                trans.setReceiver(new MyMidiReciever(device.getDeviceInfo().toString()));
+                trans.setReceiver(new MyMidiReceiver(device.getDeviceInfo().toString()));
 
                 // Open each device
                 device.open();
 
                 // Print Success message if everything was ok
                 System.out.println(device.getDeviceInfo() + " was opened!");
-            } catch (MidiUnavailableException e) { e.printStackTrace(); }
+            } catch (MidiUnavailableException e) {
+                System.out.println("No transmitter available for this device!");
+            }
         }
 
-        Parent root = FXMLLoader.load(getClass().getResource("KeyboardConfig.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("gui/KeyboardConfig.fxml"));
         primaryStage.setOnCloseRequest((request) -> {
             request.consume();
 
-            try {
-                GlobalScreen.unregisterNativeHook();
-            } catch (NativeHookException var2) {
-                var2.printStackTrace();
-            }
             Platform.exit();
             System.exit(0);
         });
